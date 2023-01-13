@@ -40,3 +40,20 @@ const Goals = ([...player]) => {
 
 Goals(match.scored);
 Goals(['Aubameyang', 'Mount']);
+for (const [Goal, player] of match.scored.entries()) {
+    console.log(`Goal${Goal + 1}:${player}`);
+}
+const odds = Object.values(match.odds);
+// console.log(odds)
+let trungbinh = 0;
+for (const odd of odds) {
+    trungbinh += odd;
+    trungbinh /= odds.length;
+}
+console.log("trungbinh", trungbinh);
+for (const [team, odd] of Object.entries(match.odds)) {
+    console.log(team, odd)
+    const teamStr = team === "x" ? "draw" : `Win ${match[team]}`;
+    console.log(teamStr);
+
+}
