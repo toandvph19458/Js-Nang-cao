@@ -23,3 +23,11 @@ const calcAverageHumanAge = (ages) => {
 };
 const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
 const avg2 = calcAverageHumanAge([6, 16, 10, 5, 6, 1, 4]);
+////
+const cho = [
+  { weight: 22, curFood: 250, owers: ["alice", "bob"] },
+  { weight: 8, curFood: 200, owers: ["Matilda"] },
+  { weight: 32, curFood: 340, owers: ["Michael"] },
+];
+cho.forEach((cho) => (cho.reFood = cho.weight ** 0.75 * 28));
+console.log(cho);
